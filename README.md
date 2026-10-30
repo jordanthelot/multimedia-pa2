@@ -12,7 +12,7 @@ Initiate the server connection on one host/terminal window using - java server (
 
 If the server connection was initated on a different host-
 
-    Start the client connection using- java client (ip_address_of_host)
+    Start the client connection using- java client (ip_address_of_host) (portnumber)
 
 If the server conneciton was initiated on a different termianl window, but on the same host
 

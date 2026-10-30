@@ -22,7 +22,7 @@ public static void main(String args[]){
         return;
     }
     String host = args[0];
-    int portNumber = Integer.parseInt(args[1]);
+    int portNumber;
     try{
             portNumber = Integer.parseInt(args[1]);
             if(portNumber < 1 || portNumber > 65535){
@@ -78,7 +78,7 @@ public static void main(String args[]){
             String filename = "received_image" + number + ".jpg";
 
             Files.write(Paths.get(filename), image);
-            double time = (System.nanoTime() - start) / 1_000_000;
+            double time = (System.nanoTime() - start) / 1_000_000.0;
             System.out.printf("Took %.3f ms%n", time);
         }
 
